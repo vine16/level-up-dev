@@ -1,0 +1,74 @@
+.main {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  .upper {
+    height: 40%;
+    width: 100%;
+    background-image: url("../public/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 10px white;
+    border: 2px solid white;
+  }
+  .lower {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    .about {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+      }
+      .age {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        padding-left: 10px;
+        font-weight: 600;
+      }
+
+      .location {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        position: relative;
+        top: 10px;
+      }
+    }
+
+    .stats {
+      border-top: 3px solid rgb(128, 128, 128, 0.5);
+      height: 30%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .numbers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .count {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+      }
+      .count-of {
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+      }
+    }
+  }
+}
